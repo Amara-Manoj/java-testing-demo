@@ -5,18 +5,6 @@ It’s a small demo meant to highlight how testing works without relying on heav
 
 ---
 
-## Project Structure
-java-testing-demo/
-├── src/ # main code
-│ └── Calculator.java
-├── test/ # unit tests
-│ └── CalculatorTest.java
-└── README.md
-
-
-
----
-
 ## How to Run
 
 1. Download [JUnit 5 Console Standalone JAR](https://search.maven.org/artifact/org.junit.platform/junit-platform-console-standalone).  

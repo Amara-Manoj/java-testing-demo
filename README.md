@@ -5,20 +5,26 @@ It’s a small demo meant to highlight how testing works without relying on heav
 
 ---
 
+## Project Structure
+```text
+java-testing-demo/
+├── src/         # main code
+│   └── Calculator.java
+├── test/        # unit tests
+│   └── CalculatorTest.java
+└── README.md
+
 ## How to Run
 
-1. Download [JUnit 5 Console Standalone JAR](https://search.maven.org/artifact/org.junit.platform/junit-platform-console-standalone).  
-2. Place it inside a folder called `lib/` in the project.  
-3. Compile the code:
-   ```bash
-   javac -cp .;lib/junit-platform-console-standalone-1.x.x.jar src/Calculator.java test/CalculatorTest.java
+Download JUnit 5 Console Standalone JAR.
+Place it inside a folder called lib/ in the project.
 
+## Compile the code:
+      javac -cp .;lib/junit-platform-console-standalone-1.x.x.jar src/Calculator.java test/CalculatorTest.java
 
-## Run Tests:
+## Run the tests:
+      java -jar lib/junit-platform-console-standalone-1.x.x.jar -cp . --scan-class-path
 
-java -jar lib/junit-platform-console-standalone-1.x.x.jar -cp . --scan-class-path
-
-## **Tech Used**
-
+## Tech Used:
 Java 17
 JUnit 5
